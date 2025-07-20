@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenwood Society - Community Board</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-container"></div>
+    <div class="orb-dark-purple"></div>
+    <!-- Animated Background Elements -->
+    <div class="background-container">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo">CB</div>
+                <h1>Greenwood Society</h1>
+            </div>
+
+            <div class="nav-links">
+                <button onclick="scrollToSection('announcements')" class="nav-link">
+                    <span>📢</span>
+                    <span>Announcements</span>
+                </button>
+                <button onclick="scrollToSection('events')" class="nav-link">
+                    <span>🎉</span>
+                    <span>Events</span>
+                </button>
+                <button onclick="scrollToSection('marketplace')" class="nav-link">
+                    <span>🛍️</span>
+                    <span>Marketplace</span>
+                </button>
+                <button onclick="scrollToSection('contacts')" class="nav-link">
+                    <span>📞</span>
+                    <span>Contacts</span>
+                </button>
+            </div>
+
+            <button onclick="toggleAdmin()" class="admin-btn">
+                <span>⚙️</span>
+                <span class="admin-text">Admin</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Admin Panel -->
+    <div id="adminPanel" class="admin-panel hidden">
+        <div class="admin-container">
+            <div class="admin-header">
+                <h2>Admin Panel</h2>
+                <a href="login.html" class="admin-link">Go to Admin Dashboard →</a>
+            </div>
+            <p>Authorized users can manage announcements, events, and marketplace posts.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h2>Welcome to Greenwood Society Community Board</h2>
+            <p>Stay connected with your neighbors. Get the latest updates, join events, and find everything you need right here in our community.</p>
+        </section>
+
+        <!-- Announcements Section -->
+        <section id="announcements" class="content-section">
+            <div class="section-header">
+                <span class="section-icon">📢</span>
+                <h2>Announcements</h2>
+            </div>
+            <div class="cards-grid" id="announcementsGrid">
+                <!-- Announcements will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="content-section">
+            <div class="section-header">
+                <span class="section-icon">🎉</span>
+                <h2>Local Events</h2>
+            </div>
+            <div class="cards-grid" id="eventsGrid">
+                <!-- Events will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Marketplace Section -->
+         
+        <section id="marketplace" class="content-section">
+            <div class="section-header">
+                <span class="section-icon">🛍️</span>
+                <h2>Buy/Sell/Rent</h2>
+            </div>
+            
+            <div class="cards-grid" id="marketplaceGrid">
+                <!-- Marketplace items will be populated by JavaScript -->
+            </div>
+            
+        </section>
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="content-section">
+            <div class="section-header">
+                <span class="section-icon">📞</span>
+                <h2>Important Contacts</h2>
+            </div>
+            <div class="cards-grid" id="contactsGrid">
+                <!-- Contacts will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 Greenwood Society Community Board. Made with ❤️ for our residents.</p>
+            <p class="footer-sub">For technical support or suggestions, contact the admin team.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <button onclick="scrollToSection('announcements')" class="mobile-nav-btn">
+            <span>📢</span>
+        </button>
+        <button onclick="scrollToSection('events')" class="mobile-nav-btn">
+            <span>🎉</span>
+        </button>
+        <button onclick="scrollToSection('marketplace')" class="mobile-nav-btn">
+            <span>🛍️</span>
+        </button>
+        <button onclick="scrollToSection('contacts')" class="mobile-nav-btn">
+            <span>📞</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
